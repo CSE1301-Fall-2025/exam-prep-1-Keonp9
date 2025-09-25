@@ -29,6 +29,13 @@ public class Q12 {
 		//and columns to make sure your solution
 		//works properly.
 		int[][] data = { {1, 2, 3}, {4, 5, 6} }; 
+		int[] sum = new int[data[0].length];
+
+		for (int i = 0; i < data[0].length; i++){
+			for (int x = 0; x < data.length; x++){
+				sum[i] += data[x][i];
+			}
+		}
 		
 	}
 }

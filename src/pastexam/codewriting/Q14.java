@@ -27,7 +27,18 @@ public class Q14 {
 		//any size! Add and subtract some data
 		//to make sure your solution
 		//works properly.
-		int[] data = {1, 2, 3}; 
+		int[] data = {1, 2, 3, 4, 5, 6, 7, 8, 9}; 
+		int[] mirror = new int[2*data.length];
+		int x = data.length-1;
+
+		for (int i = 0; i < mirror.length; i++){
+			if (i > data.length-1){
+				mirror[i] = data[x];
+				x--;
+			} else {
+				mirror[i] = data[i];
+			}
+		}
 		
 	}
 }

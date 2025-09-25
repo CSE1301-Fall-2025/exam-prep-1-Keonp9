@@ -30,6 +30,18 @@ public class Q10 {
 		//and columns to make sure your solution
 		//works properly.
 		int[][] data = { {1, 2, 3}, {4, 5, 6}, {7, 8, 9} }; 
-		
+		int total = 0;
+		int y = 0;
+
+		for (int i = 0; i < data.length; i++){
+			total+= data[i][y];
+			y++;
+		}
+		y = data.length-1;
+		for (int i = 0; i < data.length; i++){
+			total+= data[i][y];
+			y--;
+		}
+		System.out.print(total);
 	}
 }

@@ -31,7 +31,15 @@ public class Q11 {
 	
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
-		
-		
+		System.out.println("Enter number: ");
+		int num = in.nextInt();
+		int rand = (int)(Math.random()*20 + (num-10));
+		int guess = num-12;
+
+		while (guess != rand){
+			System.out.println("Enter guess:");
+			guess = in.nextInt();
+		}
+		System.out.println("YOU WON!");
 	}
 }

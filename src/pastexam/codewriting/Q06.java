@@ -29,6 +29,11 @@ public class Q06 {
 		System.out.println("How many characters?");
 		int length = in.nextInt();
 		in.close();
+
+		for (int i = 0; i < length; i++){
+			int a = (int) (Math.random()*characters.length);
+			System.out.print(characters[a]);
+		}
 		
 	}
 }

@@ -28,6 +28,15 @@ public class Q09 {
 		System.out.println("Enter a value between 1-100 (inclusive): ");
 		int threshold = in.nextInt();
 		in.close();
+		double count = 0;
 		
+		for (int i = 0; i < quantity; i++){
+			int rand = (int)(Math.random()*100 + 1);
+			if (rand > threshold){
+				count++;
+			}
+		}
+		System.out.println(count + " numbers above the threshold.");
+		System.out.print(((count/quantity)*100) + "% of numbers above the threshold.");
 	}
 }
